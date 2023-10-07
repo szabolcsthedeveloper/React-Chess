@@ -1,0 +1,51 @@
+.tile {
+    display: grid;
+    place-content: center;
+    width: 100px;
+    height: 100px;
+}
+
+.tile .chess-piece {
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80px;
+}
+
+.tile .chess-piece:hover {
+    cursor: grab;
+}
+
+.tile .chess-piece:active {
+    cursor: grabbing;
+}
+
+.black-tile {
+    background-color: #779556;
+}
+
+.white-tile {
+    background-color: #ebecd0;
+}
+
+.tile img {
+    width: 80px;
+}
+
+.tile-highlight:not(.chess-piece-tile)::before {
+    content: " ";
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.tile-highlight.chess-piece-tile::before {
+    position: absolute;
+    content: " ";
+    width: 90px;
+    height: 90px;
+    border: 5px solid rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+}
