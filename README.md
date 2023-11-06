@@ -28,7 +28,7 @@ npm install npm@latest -g
 ### Installation
 
 1. Clone the repository:
-git clone https://github.com/<your-github-username>/react-chess-game.git
+git clone https://github.com/szabolcsthedeveloper/chess-game
 
 2. Navigate to the project directory:
 cd react-chess-game
